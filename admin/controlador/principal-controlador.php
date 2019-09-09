@@ -1,1 +1,6 @@
-hola soy principal cntrolador de admin
+<?php  
+
+include_once(VISTA . "login-admin-vista.php");
+
+
+?>
