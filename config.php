@@ -8,9 +8,9 @@ define("DB", "negocio");
 
 //constantes de rutas
 
-define("RAIZ", $_SERVER['DOCUMENT_ROOT'] . "/ProductosNogocios/");
-define("CONTROLADOR", $_SERVER['DOCUMENT_ROOT'] . "/ProductosNogocios/controlador/");
-define("MODELO", $_SERVER['DOCUMENT_ROOT'] . "/ProductosNogocios/modelo/");
-define("VISTA", $_SERVER['DOCUMENT_ROOT'] . "/ProductosNogocios/vista/");
-define("ICONOS", $_SERVER['DOCUMENT_ROOT'] . "/ProductosNogocios/vista/iconos/");
-define("WEB", "/ProductosNogocios/");
+define("RAIZ", $_SERVER['DOCUMENT_ROOT'] . "/ProductosNegocios/");
+define("CONTROLADOR", $_SERVER['DOCUMENT_ROOT'] . "/ProductosNegocios/controlador/");
+define("MODELO", $_SERVER['DOCUMENT_ROOT'] . "/ProductosNegocios/modelo/");
+define("VISTA", $_SERVER['DOCUMENT_ROOT'] . "/ProductosNegocios/vista/");
+define("ICONOS", $_SERVER['DOCUMENT_ROOT'] . "/ProductosNegocios/vista/iconos/");
+define("WEB", "/ProductosNegocios/");

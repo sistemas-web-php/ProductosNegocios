@@ -1,0 +1,188 @@
+*{
+	font-family: "Homer Simpson", cursive;
+}
+
+nav{
+	background: transparent;
+	height: 75px;
+}
+
+#navbarCollapse a{
+	margin: 25px;
+}
+
+body{
+	
+}
+
+a{
+	color: white;
+}
+a:hover{
+	font-weight: bold;
+	color: white;
+}
+
+section{
+	color:white;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+h2{
+	font-size: 1.5rem;
+}
+
+.img-slide{
+	width: 100px;
+	height: 350px;
+	transition: all 0.5s;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+.img-slide > img:hover{
+	-webkit-box-shadow: 0px -3px 16px 0px rgba(255,255,255,1);
+	-moz-box-shadow: 0px -3px 16px 0px rgba(255,255,255,1);
+	box-shadow: 0px -3px 16px 0px rgba(255,255,255,1);
+}
+.img-slide > img{
+	width: 100%;
+	height: 100%;
+	transition: box-shadow 0.5s;
+}
+
+.slick-slide {
+	margin: 0 20px;
+  }
+
+  .test{
+	  height: 0px;
+	  transition: heigth 2s;
+  }
+  .nombre{
+	  text-align: center; 
+  }
+  .img-slide > img:hover ~ .nombre{
+	  font-weight: bold;
+  }
+
+  footer{
+	  background-color: grey;
+	  height: 250px;
+	  padding-top: 25px;
+  }
+
+  footer span{
+	  color: black;
+  }
+
+  #facebook > img, #instagram > img, #youtube > img {
+	  width: 50px;
+	  height: 50px;
+	  background-color: white;
+	  border-radius: 150px;
+	  transition: border-radius 0.5s;
+  }
+  #facebook > img:hover, #instagram > img:hover, #youtube > img:hover {
+	width: 50px;
+	height: 50px;
+	border-radius: 0px;
+	cursor: pointer;
+  }
+
+  span{
+	  color: white;
+  }
+
+  #facebook:hover ~ #facebook > img{
+	border-radius: 0px;
+  }
+
+  #instagram, #facebook, #youtube{
+	  margin: 10px;
+  }
+
+.fondo{
+	background-image: url("../imagenes/banner.jpeg");
+	background-size: cover;
+    background-position: center;
+	max-width: 100%;
+	max-height: 100%;
+	background-size: 100%;   
+	-moz-background-size: 100%; 
+	-o-background-size: 100%;  
+	-webkit-background-size: 100%; 
+	-khtml-background-size: 100%;  
+}
+
+.degrade{
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(66,66,66,1);
+	background: -moz-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(66,66,66,0.88) 9%, rgba(66,66,66,0.5) 18%, rgba(66,66,66,0.09) 40%, rgba(66,66,66,0) 45%, rgba(66,66,66,0.44) 73%, rgba(66,66,66,0.5) 77%, rgba(66,66,66,0.66) 82%, rgba(66,66,66,0.88) 89%, rgba(66,66,66,0.93) 94%, rgba(66,66,66,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(66,66,66,1)), color-stop(9%, rgba(66,66,66,0.88)), color-stop(18%, rgba(66,66,66,0.5)), color-stop(40%, rgba(66,66,66,0.09)), color-stop(45%, rgba(66,66,66,0)), color-stop(73%, rgba(66,66,66,0.44)), color-stop(77%, rgba(66,66,66,0.5)), color-stop(82%, rgba(66,66,66,0.66)), color-stop(89%, rgba(66,66,66,0.88)), color-stop(94%, rgba(66,66,66,0.93)), color-stop(100%, rgba(66,66,66,1)));
+	background: -webkit-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(66,66,66,0.88) 9%, rgba(66,66,66,0.5) 18%, rgba(66,66,66,0.09) 40%, rgba(66,66,66,0) 45%, rgba(66,66,66,0.44) 73%, rgba(66,66,66,0.5) 77%, rgba(66,66,66,0.66) 82%, rgba(66,66,66,0.88) 89%, rgba(66,66,66,0.93) 94%, rgba(66,66,66,1) 100%);
+	background: -o-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(66,66,66,0.88) 9%, rgba(66,66,66,0.5) 18%, rgba(66,66,66,0.09) 40%, rgba(66,66,66,0) 45%, rgba(66,66,66,0.44) 73%, rgba(66,66,66,0.5) 77%, rgba(66,66,66,0.66) 82%, rgba(66,66,66,0.88) 89%, rgba(66,66,66,0.93) 94%, rgba(66,66,66,1) 100%);
+	background: -ms-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(66,66,66,0.88) 9%, rgba(66,66,66,0.5) 18%, rgba(66,66,66,0.09) 40%, rgba(66,66,66,0) 45%, rgba(66,66,66,0.44) 73%, rgba(66,66,66,0.5) 77%, rgba(66,66,66,0.66) 82%, rgba(66,66,66,0.88) 89%, rgba(66,66,66,0.93) 94%, rgba(66,66,66,1) 100%);
+	background: linear-gradient(to bottom, rgba(66,66,66,1) 0%, rgba(66,66,66,0.88) 9%, rgba(66,66,66,0.5) 18%, rgba(66,66,66,0.09) 40%, rgba(66,66,66,0) 45%, rgba(66,66,66,0.44) 73%, rgba(66,66,66,0.5) 77%, rgba(66,66,66,0.66) 82%, rgba(66,66,66,0.88) 89%, rgba(66,66,66,0.93) 94%, rgba(66,66,66,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424242', endColorstr='#424242', GradientType=0 );
+	
+}
+
+#banner{
+	/*height: 575px;*/
+}
+
+.pelicula{
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+.pelicula > div > img{
+	width: 100%;
+	height: 250px;
+}
+
+.con-pel{
+	width: 100%;
+	height: 100%;
+}
+
+.nombre-pelicula{
+	background-color: rgba(0, 0, 0, 0.9);
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	transition: opacity 1s;
+	color: #fff;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.pelicula:hover .nombre-pelicula {
+	opacity: 1;
+}
+
+.cont-pelicula{
+	height: 250px;
+}
+
+.nombre-pelicula-mobile{
+	word-wrap: break-word;
+}
+
+label{
+	color: white;
+	font-weight: bold;
+}
+
+.titulo-dato{
+	font-weight: bold;
+}
+
