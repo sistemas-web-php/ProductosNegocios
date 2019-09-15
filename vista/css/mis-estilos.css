@@ -2,11 +2,14 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+
 }
+
 
 body{
 	background: #FFF;
 	font-family: 'Open Sans', sans-serif;
+
 }
 
 .wrap{
@@ -84,6 +87,16 @@ body{
 
 .products-list .product-item img{
 	width: 100%;
+}
+.products-list .product-item p{
+	
+	width: 100%;
+	padding: 8px 0;
+	
+
+	color: #000;
+	text-align: center;
+	text-decoration: none;
 }
 
 .products-list .product-item a{
