@@ -8,7 +8,7 @@
 
 <?php include_once(VISTA . "menu-lateral.php") ?>
 
-<div id="muestra-prod" class='col-12 col-md-9 row d-flex justify-content-center'>
+<div id="muestra-prod" class='col-12 col-md-8 col-lg-9 row d-flex justify-content-center'>
 
 	<?php include_once(VISTA . "muestra-prod.php") ?>
 

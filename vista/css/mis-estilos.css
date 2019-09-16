@@ -203,25 +203,37 @@ body{
 #lateral{
 	height: 100%;
 	color: black;
+	padding: 0px;
+	margin: 0px;
+	background: #f5f4f4;
+}
+
+#lateral ul{
+	list-style: none;
+}
+
+#lateral h1{
+	color: white;
+}
+
+#contenido-menu{
+	width: 100%;
 }
 
 .item-menu-lat{
-	padding: 25px;
+	padding: 15px;
 	padding-left: 30px;
 }
 
 .item-menu-lat:hover{
 	padding-left: 50px;
-	transition: padding 0.5s;
+	background: #D1D0D0;
+	transition: all 0.5s;
 	cursor: pointer;
 }
 
 .prod{
-	margin: 10px;
-}
-
-#lateral li{
-	border-bottom: 1px solid black;
+	margin: 15px;
 }
 
 .img-prod{
