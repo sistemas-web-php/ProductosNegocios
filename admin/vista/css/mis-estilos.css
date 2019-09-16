@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 .login-form {
     width: 380px;
       margin: 120px auto;
@@ -21,14 +20,13 @@
         font-size: 15px;
         font-weight: bold;
     }
->>>>>>> origin/master
+
 *{
 	font-family: "Homer Simpson", cursive;
 }
 
 nav{
 	background: transparent;
-<<<<<<< HEAD
 	height: 75px;
 }
 
@@ -37,14 +35,8 @@ nav{
 }
 
 body{
-	
-=======
-	height: 50px;
-}
-
-body{
 	background: #424242;
->>>>>>> origin/master
+
 }
 
 a{
@@ -208,17 +200,3 @@ h2{
 .nombre-pelicula-mobile{
 	word-wrap: break-word;
 }
-
-label{
-	color: white;
-	font-weight: bold;
-}
-
-.titulo-dato{
-	font-weight: bold;
-<<<<<<< HEAD
-}
-
-=======
-}
->>>>>>> origin/master

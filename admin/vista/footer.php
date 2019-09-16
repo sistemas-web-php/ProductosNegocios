@@ -1,9 +1,3 @@
-<footer>
-
-
-</footer>
-
-
 
     <script src="<?php echo RAIZ . '/vista/js/bootstrap.js'; ?>"></script>
     <script src="<?php echo RAIZ . '/vista/js/jquery.js'; ?>"></script>

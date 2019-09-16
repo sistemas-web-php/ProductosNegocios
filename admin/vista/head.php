@@ -14,5 +14,6 @@
     <link rel="stylesheet" href="<?php echo RAIZ . 'vista/slick/slick-theme.css'; ?>">
 
     <link rel="stylesheet" href="<?php echo RAIZ . 'vista/css/mis-estilos.css'; ?>">
+    <link rel="stylesheet" href="<?php echo RAIZ . 'vista/css/menu-lateral.css'; ?>">
 
 </head>
