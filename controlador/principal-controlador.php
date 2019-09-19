@@ -1,3 +1,3 @@
 <?php
 
-include_once(VISTA . "catalogo-vista.php");
+include_once(VISTA . "principal-vista.php");

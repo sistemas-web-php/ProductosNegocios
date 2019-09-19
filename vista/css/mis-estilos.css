@@ -9,7 +9,6 @@
 body{
 	background: #FFF;
 	font-family: 'Open Sans', sans-serif;
-
 }
 
 .wrap{
@@ -243,4 +242,40 @@ body{
 
 #muestra-prod{
 	margin: auto;
+}
+
+
+#menu-superior{
+	width: 100%;
+	height: 100px;
+	margin: 0%;
+	padding: 0%;
+}
+
+#menu-secundario a{
+	padding: 16px;
+	color: #000;
+}
+
+#ruta-busqueda{
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+#menu-secundario a:hover{
+	background: rgba(0, 0, 0, 0.5);
+	text-decoration: none;
+}
+
+#menu-secundario>div{
+	padding: 15px;
+	display: block;
+}
+
+#slide-fotos{
+	height: 400px;
+}
+
+#slide-fotos img{
+	height: 400px;
 }
