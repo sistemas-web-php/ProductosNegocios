@@ -13,7 +13,7 @@
 <section class='col-12 col-md-4 col-lg-3'></section>
 
 <section class="col-12 col-md-8 col-lg-9" id="ruta-busqueda">
-.....................
+ruta de busquedas y filtros
 </section>
 
 <?php include_once(VISTA . "menu-lateral.php") ?>
