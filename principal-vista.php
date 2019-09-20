@@ -1,277 +1,277 @@
 
-<style type="text/css">
-	@import "bourbon";
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600);
+<body class="fixed-sn light-blue-skin">
 
-body{
-  font-family: "Lato";
-  font-size: 100%; 
-	overflow-y: scroll; 
- font-family: sans-serif; 
- -ms-text-size-adjust: 100%; 
- -webkit-text-size-adjust: 100%; 
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
-  text-rendering: optimizeLegibility;
-  background-color: #fefefe;
-}
-a{
-  text-decoration: none;
-  @include transition(all 0.6s ease);
-  
-  &:hover{
-     @include transition(all 0.6s ease);
-  }
-}
-
-.app{
-  height: 100vh;
-}
-/* -------------
-Sidebar
-----------------*/
-.sidebar {
-  position: absolute;
-  //width: 33.3333%;
-  width: 17em;
-  height: 100%;
-  top: 0;
-  overflow:hidden;
-  background-color: #19222a;
-  -webkit-transform: translateZ(0);
-  visibility: visible;
-  -webkit-backface-visibility: hidden;
-  
-  header{
-    background-color: #09f;
-    width: 100%;
-    display:block;
-    padding: 0.75em	1em;
-  }
-}
-
-/* -------------
-Sidebar Nav
-----------------*/
-.sidebar-nav {
-  position: fixed;
-  //width: 13em;
-  background-color: #19222a;
-  height: 100%;
-  font-weight: 400; 
-  font-size: 1.2em;
-  overflow: auto;
-  padding-bottom: 6em;
-  z-index: 9;
-  overflow: hidden;
-  -webkit-overflow-scrolling: touch;
- 
-  
-  ul{
-    list-style:none;
-    display: block;
-    padding: 0;
-    margin: 0;
-    
-    li{
-      margin-left: 0;
-      padding-left: 0;
-      //min-width: 13em;
-      display:inline-block;
-      width: 100%;
-      
-      a{
-        color: rgba(255,255,255,0.9);
-        font-size: 0.75em;
-        padding: 1.05em	1em;
-        position: relative;
-        display:block;
-        
-        &:hover{
-          background-color: rgba(0,0,0,0.9);
-          @include transition(all 0.6s ease);
-        }
-      }
-/* -------------
-Sidebar: icons
-----------------*/
-      i{
-        font-size: 1.8em;
-        padding-right: 0.5em;
-        width: 9em;
-        display: inline;
-        vertical-align:middle;
-      }  
-    }
-  }
-
-/* -------------
-Chev elements
-----------------*/ 
-  & > ul > li > a:after {
-    content: '\f125';
-    font-family: ionicons;
-    font-size: 0.5em;
-    width: 10px;
-    color: #fff;
-    position: absolute;
-    right: 0.75em;
-    top: 45%;
-  }
-/* -------------
-Nav-Flyout
-----------------*/
-  & .nav-flyout {
-    position: absolute;
-    background-color: #080D11;
-    z-index: 9;
-    left: 2.5em;
-    top: 0;
-    height: 100vh;
-    @include transform(translateX(100%));
-    @include transition(all 0.5s ease);
-    
-    a:hover{
-      background-color: rgba(255,255,255, 0.05)
-    }
-  }
-
-/* -------------
-Hover
-----------------*/
-  & ul > li:hover{
-      .nav-flyout{
-      @include transform(translateX(0));
-        @include transition(all 0.5s ease);
-    }
-  }
-}
-</style>
-<section class="app">
-  <aside class="sidebar">
-         <header>
-        Menu
-      </header>
-    <nav class="sidebar-nav">
- 
-      <ul>
+  <!--Double navigation-->
+  <header>
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav sn-bg-4 fixed">
+      <ul class="custom-scrollbar">
+        <!-- Logo -->
         <li>
-          <a href="#"><i class="ion-bag"></i> <span>Shop</span></a>
-          <ul class="nav-flyout">
-            <li>
-              <a href="#"><i class="ion-ios-color-filter-outline"></i>Derps</a>
+          <div class="logo-wrapper waves-light">
+            <a href="#"><img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" class="img-fluid flex-center"></a>
+          </div>
+        </li>
+        <!--/. Logo -->
+        <!--Social-->
+        <li>
+          <ul class="social">
+            <li><a href="#" class="icons-sm fb-ic"><i class="fab fa-facebook-f"> </i></a></li>
+            <li><a href="#" class="icons-sm pin-ic"><i class="fab fa-pinterest"> </i></a></li>
+            <li><a href="#" class="icons-sm gplus-ic"><i class="fab fa-google-plus-g"> </i></a></li>
+            <li><a href="#" class="icons-sm tw-ic"><i class="fab fa-twitter"> </i></a></li>
+          </ul>
+        </li>
+        <!--/Social-->
+        <!--Search Form-->
+        <li>
+          <form class="search-form" role="search">
+            <div class="form-group md-form mt-0 pt-1 waves-light">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+          </form>
+        </li>
+        <!--/.Search Form-->
+        <!-- Side navigation links -->
+        <li>
+          <ul class="collapsible collapsible-accordion">
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-chevron-right"></i> Submit blog<i
+                  class="fas fa-angle-down rotate-icon"></i></a>
+              <div class="collapsible-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="waves-effect">Submit listing</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Registration form</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#"><i class="ion-ios-clock-outline"></i>Times</a>
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="far fa-hand-pointer"></i> Instruction<i
+                  class="fas fa-angle-down rotate-icon"></i></a>
+              <div class="collapsible-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="waves-effect">For bloggers</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">For authors</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#"><i class="ion-android-star-outline"></i>Hates</a>
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="fas fa-eye"></i> About<i class="fas fa-angle-down rotate-icon"></i></a>
+              <div class="collapsible-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="waves-effect">Introduction</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Monthly meetings</a>
+                  </li>
+                </ul>
+              </div>
             </li>
-            <li>
-              <a href="#"><i class="ion-heart-broken"></i>Beat</a>
+            <li><a class="collapsible-header waves-effect arrow-r"><i class="far fa-envelope"></i> Contact me<i class="fas fa-angle-down rotate-icon"></i></a>
+              <div class="collapsible-body">
+                <ul class="list-unstyled">
+                  <li><a href="#" class="waves-effect">FAQ</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Write a message</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">FAQ</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Write a message</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">FAQ</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Write a message</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">FAQ</a>
+                  </li>
+                  <li><a href="#" class="waves-effect">Write a message</a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </li>
-        <li>
-          <a href="#"><i class="ion-ios-settings"></i> <span class="">Controls</span></a>
-          <ul class="nav-flyout">
-            <li>
-              <a href="#"><i class="ion-ios-alarm-outline"></i>Watch</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-camera-outline"></i>Creeper</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-chatboxes-outline"></i>Hate</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-cog-outline"></i>Grinder</a>
-            </li>
-          </ul>
+        <!--/. Side navigation links -->
+      </ul>
+      <div class="sidenav-bg mask-strong"></div>
+    </div>
+    <!--/. Sidebar navigation -->
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+      <!-- SideNav slide-out button -->
+      <div class="float-left">
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="fas fa-bars"></i></a>
+      </div>
+      <!-- Breadcrumb-->
+      <div class="breadcrumb-dn mr-auto">
+        <p>Material Design for Bootstrap</p>
+      </div>
+      <ul class="nav navbar-nav nav-flex-icons ml-auto">
+        <li class="nav-item">
+          <a class="nav-link"><i class="fas fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
         </li>
-        <li>
-          <a href="#"><i class="ion-ios-briefcase-outline"></i> <span class="">Folio</span></a>
-          <ul class="nav-flyout">
-            <li>
-              <a href="#"><i class="ion-ios-flame-outline"></i>Burn</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-lightbulb-outline"></i>Bulbs</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-location-outline"></i>Where You</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-locked-outline"></i>On Lock</a>
-            </li>
-             <li>
-              <a href="#"><i class="ion-ios-navigate-outline"></i>Ghostface</a>
-            </li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link"><i class="far fa-comments"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
         </li>
-        <li>
-          <a href="#"><i class="ion-ios-analytics-outline"></i> <span class="">Graphicals</span></a>
-          <ul class="nav-flyout">
-            <li>
-              <a href="#"><i class="ion-ios-timer-outline"></i>Timers</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-arrow-graph-down-left"></i>You Lose</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-partlysunny-outline"></i>Stormy</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-timer-outline"></i>Lookie Look</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-game-controller-a-outline"></i>Dork Mfer</a>
-            </li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link"><i class="fas fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Account</span></a>
         </li>
-        <li>
-          <a href="#"><i class="ion-ios-paper-outline"></i> <span class="">Papers</span></a>
-          <ul class="nav-flyout">
-            <li>
-              <a href="#"><i class="ion-ios-filing-outline"></i>File Cab</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-information-outline"></i>Infos</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-paperplane-outline"></i>Planes</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-android-star-outline"></i>Shop</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#"><i class="ion-ios-navigate-outline"></i> <span class="">Ass Finder</span></a>
-          <ul class="nav-flyout">
-            <li>
-              <a href="#"><i class="ion-ios-flame-outline"></i>Burn</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-lightbulb-outline"></i>Bulbs</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-location-outline"></i>Where You</a>
-            </li>
-            <li>
-              <a href="#"><i class="ion-ios-locked-outline"></i>On Lock</a>
-            </li>
-             <li>
-              <a href="#"><i class="ion-ios-navigate-outline"></i>Ghostface</a>
-            </li>
-          </ul>
-        </li>
-        <li>
-          <a href="#"><i class="ion-ios-medical-outline"></i> <span class="">Cocaine</span></a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
         </li>
       </ul>
     </nav>
-  </aside>
-</section>
+    <!-- /.Navbar -->
+  </header>
+  <!--/.Double navigation-->
+
+  <!--Main layout-->
+  <main>
+
+    <div class="container-fluid text-center">
+
+      <!--Card-->
+      <div class="card card-cascade wider reverse my-4 pb-5">
+
+        <!--Card image-->
+        <div class="view view-cascade overlay wow fadeIn">
+          <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(137).jpg" class="img-fluid">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--/Card image-->
+
+        <!--Card content-->
+        <div class="card-body card-body-cascade text-center wow fadeIn" data-wow-delay="0.2s">
+          <!--Title-->
+          <h4 class="card-title"><strong>My adventure</strong></h4>
+          <h5 class="blue-text"><strong>Photography</strong></h5>
+
+          <p class="card-text">Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium doloremque
+            laudantium, totam rem aperiam.
+          </p>
+
+          <a class="btn btn-primary btn-lg">Primary button</a>
+          <a class="btn btn-secondary btn-lg">Secondary button</a>
+          <a class="btn btn-default btn-lg">Default button</a>
+
+        </div>
+        <!--/.Card content-->
+
+      </div>
+      <!--/.Card-->
+
+    </div>
+
+  </main>
+  <!--/Main layout-->
+
+  <!--Footer-->
+  <footer class="page-footer text-center text-md-left pt-4">
+
+    <!--Footer Links-->
+    <div class="container-fluid">
+      <div class="row">
+
+        <!--First column-->
+        <div class="col-md-3">
+          <h5 class="text-uppercase font-weight-bold mb-4">Footer Content</h5>
+          <p>Here you can use rows and columns here to organize your footer content.</p>
+        </div>
+        <!--/.First column-->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!--Second column-->
+        <div class="col-md-2 mx-auto">
+          <h5 class="text-uppercase font-weight-bold mb-4">Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!">Link 1</a></li>
+            <li><a href="#!">Link 2</a></li>
+            <li><a href="#!">Link 3</a></li>
+            <li><a href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <!--/.Second column-->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!--Third column-->
+        <div class="col-md-2 mx-auto">
+          <h5 class="text-uppercase font-weight-bold mb-4">Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!">Link 1</a></li>
+            <li><a href="#!">Link 2</a></li>
+            <li><a href="#!">Link 3</a></li>
+            <li><a href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <!--/.Third column-->
+
+        <hr class="w-100 clearfix d-md-none">
+
+        <!--Fourth column-->
+        <div class="col-md-2 mx-auto">
+          <h5 class="text-uppercase font-weight-bold mb-4">Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#!">Link 1</a></li>
+            <li><a href="#!">Link 2</a></li>
+            <li><a href="#!">Link 3</a></li>
+            <li><a href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <!--/.Fourth column-->
+
+      </div>
+    </div>
+    <!--/.Footer Links-->
+
+    <hr>
+
+    <!--Call to action-->
+    <div class="call-to-action text-center my-4">
+      <ul class="list-unstyled list-inline">
+        <li class="list-inline-item">
+          <h5>Register for free</h5>
+        </li>
+        <li class="list-inline-item"><a href="" class="btn btn-primary">Sign up!</a></li>
+      </ul>
+    </div>
+    <!--/.Call to action-->
+
+    <hr>
+
+    <!--Social buttons-->
+    <div class="social-section text-center">
+      <ul class="list-unstyled list-inline">
+        <li class="list-inline-item"><a class="btn-floating btn-fb"><i class="fab fa-facebook-f"> </i></a></li>
+        <li class="list-inline-item"><a class="btn-floating btn-tw"><i class="fab fa-twitter"> </i></a></li>
+        <li class="list-inline-item"><a class="btn-floating btn-gplus"><i class="fab fa-google-plus-g"> </i></a></li>
+        <li class="list-inline-item"><a class="btn-floating btn-li"><i class="fab fa-linkedin-in"> </i></a></li>
+        <li class="list-inline-item"><a class="btn-floating btn-git"><i class="fab fa-github"> </i></a></li>
+      </ul>
+    </div>
+    <!--/.Social buttons-->
+
+    <!--Copyright-->
+    <div class="footer-copyright py-3 text-center">
+      <div class="container-fluid">
+        © 2018 Copyright: <a href="http://www.MDBootstrap.com"> MDBootstrap.com </a>
+
+      </div>
+    </div>
+    <!--/.Copyright-->
+
+  </footer>
+  <!--/.Footer-->
+
+</body>
