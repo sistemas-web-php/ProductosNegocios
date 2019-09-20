@@ -1,4 +1,7 @@
-
+/* Only for snippet */
+.double-nav .breadcrumb-dn {
+  color: #fff;
+}
 .login-form {
     width: 380px;
       margin: 120px auto;
