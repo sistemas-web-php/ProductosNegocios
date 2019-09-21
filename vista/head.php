@@ -15,7 +15,11 @@
 
     <link rel="stylesheet" href="<?php echo WEB . 'vista/css/mis-estilos.css'; ?>">
 
-    <link rel="stylesheet" href="<?php echo WEB . 'vista/css/menu-lateral.css'; ?>">
-
 </head>
-
+<body>
+    <center><div class="center">
+       <h1>bienvenido - ProductosNegocios</h1>
+    
+    </div></center>
+    
+</body>

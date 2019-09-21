@@ -1,4 +1,4 @@
-/* Only for snippet */
+Only for snippet 
 .double-nav .breadcrumb-dn {
   color: #fff;
 }
@@ -37,11 +37,9 @@ nav{
 	margin: 25px;
 }
 >>>>>>>>>>>>>navbar
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
 
 <<<<<<< HEAD
-body{
-	background: #424242;
 
 =======
 *{
@@ -216,44 +214,4 @@ body{
 	/*height: 575px;*/
 }
 
-.pelicula{
-	width: 100%;
-	height: auto;
-	margin-bottom: 10px;
-}
 
-.pelicula > div > img{
-	width: 100%;
-	height: 250px;
-}
-
-.con-pel{
-	width: 100%;
-	height: 100%;
-}
-
-.nombre-pelicula{
-	background-color: rgba(0, 0, 0, 0.9);
-	opacity: 0;
-	width: 100%;
-	height: 100%;
-	padding: 0px;
-	transition: opacity 1s;
-	color: #fff;
-	text-align: center;
-	word-wrap: break-word;
-}
-
-.pelicula:hover .nombre-pelicula {
-	opacity: 1;
-}
-
-.cont-pelicula{
-	height: 250px;
-}
-
-.nombre-pelicula-mobile{
-	word-wrap: break-word;
-}
-=======
->>>>>>> origin/rodrigo
