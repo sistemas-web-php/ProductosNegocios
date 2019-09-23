@@ -3,6 +3,8 @@
 
   <?php include_once(VISTA); ?>
 
+<?php include_once(VISTA . "head.php") ?>
+
 <body class="fixed-sn light-blue-skin">
 
   <!--Double navigation-->
