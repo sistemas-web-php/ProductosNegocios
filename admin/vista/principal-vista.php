@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <?php include_once(VISTA); ?>
 
 <body class="fixed-sn light-blue-skin">
 
@@ -275,3 +279,5 @@
   <!--/.Footer-->
 
 </body>
+
+</html>
