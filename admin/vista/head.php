@@ -9,8 +9,9 @@
    
 
     <link rel="stylesheet" href="<?php echo RAIZ . 'vista/css/mis-estilos.css'; ?>">
-    <link rel="stylesheet" href="<?php echo RAIZ . 'vista/js/estilo.js'; ?>">
+   
     <link rel="stylesheet" href="<?php echo RAIZ . 'vista/css/menu-lateral.css'; ?>">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 
 </head>
 <body>
